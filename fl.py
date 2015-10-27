@@ -32,7 +32,7 @@ def run_loop(say=False, words=None):
         raise SystemExit
 
 if __name__ == '__main__':
-    if len(sys.argv) < 2:
+    if '-h' in sys.argv[:2]:
         raise SystemExit("Usage: fl.py [-s] [<words>...]")
     say = '-s' in sys.argv[:2]
     words = [word for word in sys.argv[1:] if word != '-s']
