@@ -21,7 +21,7 @@ class BiDict(object):
             return self.get_reversed(key)
 
     def get_reversed(self, key):
-        for k, item in self.bi_map.iteritems():
+        for k, item in self.bi_map.items():
             if item == key:
                 return k
         raise KeyError

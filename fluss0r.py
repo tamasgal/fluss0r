@@ -65,7 +65,7 @@ def run_loop(prompt, say=False):
     translator = UniversalTranslator(FROM_MAP, TO_MAP)
     try:
         while True:
-            text = raw_input(prompt).decode('utf-8')
+            text = input(prompt)
             encrypted = translator.encrypt(text)
             print(encrypted)
             if say:
