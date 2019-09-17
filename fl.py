@@ -21,7 +21,7 @@ def run_loop(say=False, words=None):
             if words:
                 text = " ".join(words)
             else:
-                text = raw_input().decode('utf-8')
+                text = input()
             encrypted = translate(text, MAP1, MAP2)
             print(encrypted)
             if say:
